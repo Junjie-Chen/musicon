@@ -89,6 +89,17 @@ a {
   color: #ffffff;
 }
 
+#introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 342px;
+  margin: -171px 0 80px -500px;
+  padding: 20px;
+  text-align: center;
+}
+
 #introduction h1 {
   margin-top: 0;
   margin-bottom: 50px;
@@ -131,10 +142,14 @@ footer {
 }
 
 .instrument {
+  display: inline-block;
+  width: 24%;
   margin-left: 2px;
   margin-right: 2px;
   margin-bottom: 10px;
   padding: 10px;
+  background-color: #212529;
+  border-radius: 5px;
   vertical-align: top;
   overflow: hidden;
 }
