@@ -29,6 +29,29 @@ const context = {
       price: '$649.00',
       deal: '$349.00',
       sale: true
+    },
+    {
+      image: 'images/violin.png',
+      name: 'Violin',
+      description: 'The violin, also known informally as a fiddle, is a wooden string instrument in the violin family. Most violins have a hollow wooden body. It is the smallest and highest-pitched instrument in the family in regular use.',
+      price: '$245.00'
     }
   ]
 };
+
+const homeTemplateElement = document.getElementById('home-template');
+const storeTemplateElement = document.getElementById('store-template');
+
+if (homeTemplateElement) {
+  const homeTemplateSource = homeTemplateElement.innerHTML;
+  const homeTemplate = Handlebars.compile(homeTemplateSource);
+  const homeHtml = homeTemplate(context);
+
+  document.getElementById('home-information').innerHTML = homeHtml;
+} else if (storeTemplateElement) {
+  const storeTemplateSource = storeTemplateElement.innerHTML;
+  const storeTemplate = Handlebars.compile(storeTemplateSource);
+  const storeHtml = storeTemplate(context);
+
+  document.getElementById('store-information').innerHTML = storeHtml;
+}
