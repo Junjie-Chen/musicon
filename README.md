@@ -1,5 +1,5 @@
 # Musicon
 
-A concise and interactive musical instruments storefront on the web.
+A simple musical instruments storefront on the web
 
-It is built in HTML, CSS, and JavaScript.
+It is built in Handlebars, JavaScript, CSS and HTML.
